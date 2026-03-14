@@ -31,81 +31,14 @@ export default function SlideReveal() {
     <div className="w-screen h-screen overflow-hidden bg-black flex items-center justify-center">
       <div className="relative w-full h-full max-w-[390px] max-h-[844px] bg-black flex flex-col">
         <div className="flex-1 relative">
-          {/* Side 1 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-black">
-            <div className="h-1/2 flex items-center justify-center p-6">
-              <div className="w-full h-full rounded-3xl border border-white/10 bg-black/30 shadow-inner flex items-center justify-center">
-                <img
-                  src={portrait}
-                  alt="Portrait"
-                  className="max-h-full max-w-[85%] w-auto object-contain"
-                />
-              </div>
-            </div>
-
-            <div className="h-1/2 flex items-center justify-center px-6 pb-6 overflow-y-auto">
-              <div className="text-center space-y-4">
-                <h2 className="text-lg font-semibold text-white leading-tight">
-                  John Patrick Diaz
-                </h2>
-                <p className="text-xs font-medium text-gray-300">
-                  Managing Director
-                </p>
-                <p className="text-xs text-gray-400 leading-relaxed">
-                  CONSULTING SERVICES
-                </p>
-
-                <div className="pt-2 space-y-3">
-                  <p className="text-xs text-gray-400">
-                    We provide a wide range of consultative services such as:
-                  </p>
-                  <ul className="text-xs text-gray-300 space-y-1.5 text-left max-w-[260px] mx-auto">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Program & Product Management</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Environmental Health & Safety</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Strategic Planning</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Military & Government Contracting</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Law Enforcement Services</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Engineering</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Non-Profit Support</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Side 2 */}
-          <div
-            className="absolute inset-0 transition-all duration-100 px-6 py-10 bg-gradient-to-br from-[#111111] to-black flex flex-col items-center justify-start text-center gap-4"
-            style={{
-              clipPath: `inset(0 ${100 - revealPosition[0]}% 0 0)`,
-            }}
-          >
+          {/* Side 1 (Condor logo) */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-black px-6 py-10 flex flex-col items-center justify-start text-center gap-4">
             <img
               src={logo}
               alt="Condor Consulting Group Logo"
               className="w-full h-auto max-w-[360px] object-contain"
             />
+
             <div className="space-y-2 text-gray-200 max-w-[340px]">
               <p className="text-sm font-semibold">
                 Adaptive Solutions for the Modern World
@@ -117,6 +50,72 @@ export default function SlideReveal() {
                 Delivering solutions for institutions operating in complex
                 environments.
               </p>
+            </div>
+          </div>
+
+          {/* Side 2 (Portrait card) */}
+          <div
+            className="absolute inset-0 transition-all duration-100 bg-gradient-to-br from-[#111111] to-black px-5 py-6"
+            style={{ clipPath: `inset(0 ${100 - revealPosition[0]}% 0 0)` }}
+          >
+            <div className="w-full h-full rounded-3xl border border-white/8 bg-white/10 shadow-inner flex flex-col">
+              <div className="h-1/2 flex items-center justify-center p-4">
+                <img
+                  src={portrait}
+                  alt="Portrait"
+                  className="max-h-full max-w-[85%] w-auto object-contain"
+                />
+              </div>
+
+              <div className="h-1/2 flex items-center justify-center px-6 pb-6 overflow-y-auto">
+                <div className="text-center space-y-4">
+                  <h2 className="text-lg font-semibold text-white leading-tight">
+                    John Patrick Diaz
+                  </h2>
+                  <p className="text-xs font-medium text-gray-300">
+                    Managing Director
+                  </p>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    CONSULTING SERVICES
+                  </p>
+
+                  <div className="pt-2 space-y-3">
+                    <p className="text-xs text-gray-500">
+                      We provide a wide range of consultative services such as:
+                    </p>
+                    <ul className="text-xs text-gray-400 space-y-1.5 text-left max-w-[260px] mx-auto">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Program & Product Management</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Environmental Health & Safety</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Strategic Planning</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Military & Government Contracting</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Law Enforcement Services</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Engineering</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#CD212A] mt-0.5">•</span>
+                        <span>Non-Profit Support</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
