@@ -29,11 +29,8 @@ export default function SlideReveal() {
 
   return (
     <div className="w-screen h-screen overflow-hidden bg-black flex items-center justify-center">
-      {/* iPhone Safari Container */}
       <div className="relative w-full h-full max-w-[390px] max-h-[844px] bg-black flex flex-col">
-        {/* Image Container */}
         <div className="flex-1 relative">
-          {/* Base Image - Portrait with Bio */}
           <div className="absolute inset-0 flex">
             <div className="w-1/3 relative bg-gradient-to-br from-[#111111] to-black flex items-start justify-center pt-8">
               <img
@@ -42,7 +39,7 @@ export default function SlideReveal() {
                 className="w-auto h-auto max-w-[90%] max-h-[200px] object-contain"
               />
             </div>
-            {/* Bio Text Section */}
+
             <div className="w-2/3 bg-gradient-to-br from-[#111111] to-black flex items-center justify-center p-6 overflow-y-auto">
               <div className="text-center space-y-4">
                 <h2 className="text-lg font-semibold text-white leading-tight">
@@ -55,11 +52,7 @@ export default function SlideReveal() {
                   CONSULTING SERVICES
                 </p>
 
-                {/* Consulting Services Section */}
                 <div className="pt-4 space-y-3">
-                  <h3 className="text-sm font-semibold text-white uppercase tracking-wide">
-                    Consulting Services
-                  </h3>
                   <p className="text-xs text-gray-400">
                     We provide a wide range of consultative services such as:
                   </p>
@@ -98,9 +91,8 @@ export default function SlideReveal() {
             </div>
           </div>
 
-          {/* Reveal Image - Logo (Nearly Full Width) with clip-path */}
           <div
-            className="absolute inset-0 transition-all duration-100 flex items-center justify-center px-2"
+            className="absolute inset-0 transition-all duration-100 px-6 py-10 bg-gradient-to-br from-[#111111] to-black flex flex-col items-center justify-between text-center"
             style={{
               clipPath: `inset(0 ${100 - revealPosition[0]}% 0 0)`,
             }}
@@ -110,21 +102,28 @@ export default function SlideReveal() {
               alt="Condor Consulting Group Logo"
               className="w-full h-auto max-w-[375px] object-contain"
             />
+            <div className="space-y-2 text-gray-200 max-w-[340px]">
+              <p className="text-sm font-semibold">
+                Adaptive Solutions for the Modern World
+              </p>
+              <p className="text-xs text-gray-400">
+                Strategy. Compliance. Operations. Contract Delivery.
+              </p>
+              <p className="text-xs text-gray-400">
+                Delivering solutions for institutions operating in complex
+                environments.
+              </p>
+            </div>
           </div>
 
-          {/* Divider Line */}
           <div
             className="absolute top-0 bottom-0 w-1 bg-white shadow-lg transition-all duration-100"
-            style={{
-              left: `${revealPosition[0]}%`,
-            }}
+            style={{ left: `${revealPosition[0]}%` }}
           />
         </div>
 
-        {/* Controls Container */}
         <div className="p-8 pb-12 bg-gradient-to-t from-black/80 to-transparent">
           <div className="max-w-md mx-auto space-y-6">
-            {/* Slider */}
             <div className="space-y-3">
               <Slider
                 value={revealPosition}
@@ -135,7 +134,6 @@ export default function SlideReveal() {
               />
             </div>
 
-            {/* Action Buttons */}
             <div className="flex gap-3">
               <Button
                 onClick={saveContact}
