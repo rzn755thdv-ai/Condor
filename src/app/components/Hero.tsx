@@ -1,4 +1,4 @@
-import condorLogo from '../../../Logo.png';
+import condorLogo from '../../../logo.png';
 import heroBg from '../../../Hero.png';
 export function Hero() {
   return (
