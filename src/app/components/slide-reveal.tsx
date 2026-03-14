@@ -33,15 +33,17 @@ export default function SlideReveal() {
         <div className="flex-1 relative">
           {/* Side 1 */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-black">
-            <div className="h-1/3 flex items-center justify-center pt-6">
-              <img
-                src={portrait}
-                alt="Portrait"
-                className="max-h-full max-w-[90%] w-auto object-contain"
-              />
+            <div className="h-1/2 flex items-center justify-center p-6">
+              <div className="w-full h-full rounded-3xl border border-white/10 bg-black/30 shadow-inner flex items-center justify-center">
+                <img
+                  src={portrait}
+                  alt="Portrait"
+                  className="max-h-full max-w-[85%] w-auto object-contain"
+                />
+              </div>
             </div>
 
-            <div className="h-2/3 flex items-center justify-center px-6 pb-6 overflow-y-auto">
+            <div className="h-1/2 flex items-center justify-center px-6 pb-6 overflow-y-auto">
               <div className="text-center space-y-4">
                 <h2 className="text-lg font-semibold text-white leading-tight">
                   John Patrick Diaz
