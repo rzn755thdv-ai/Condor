@@ -1,4 +1,4 @@
-import condorLogo from '../../../Logo.png';
+import condorLogo from '../../../logo.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
