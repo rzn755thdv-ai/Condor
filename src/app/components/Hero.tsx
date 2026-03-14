@@ -1,6 +1,5 @@
-import condorLogo from 'figma:asset/b569dd567ea2795ee4dab8dbde7028b9e421190e.png';
-import heroBg from 'figma:asset/03ad1422ac65c3b3cf9ba1cb065eb44f027f0e3e.png';
-
+import condorLogo from '../../../Logo.png';
+import heroBg from '../../../Hero.png';
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
