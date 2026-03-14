@@ -4,40 +4,23 @@ import { Button } from "./ui/button";
 
 import portrait from "../../../portrait.PNG";
 import logo from "../../../Logo.png";
+import vcard from "../../../John_D.vcf";
 
 export default function SlideReveal() {
   const [revealPosition, setRevealPosition] = useState([0]);
 
-  // Contact information for vCard
   const contactInfo = {
-    name: "John Doe",
     organization: "Condor Consulting Group",
-    phone: "+1-234-567-8900",
-    email: "john.doe@example.com",
     website: "https://condorconsultinggroup.co",
   };
 
   const saveContact = () => {
-    // Create vCard format
-    const vCard = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactInfo.name}
-ORG:${contactInfo.organization}
-TEL:${contactInfo.phone}
-EMAIL:${contactInfo.email}
-URL:${contactInfo.website}
-END:VCARD`;
-
-    // Create blob and download
-    const blob = new Blob([vCard], { type: "text/vcard" });
-    const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.href = url;
-    link.download = "John.vcf";
+    link.href = vcard;
+    link.download = "John_D.vcf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   const goToWebsite = () => {
@@ -83,11 +66,11 @@ END:VCARD`;
                   <ul className="text-xs text-gray-300 space-y-1.5 text-left max-w-[240px] mx-auto">
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Program & Product Management</span>
+                      <span>Program &amp; Product Management</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Environmental Health & Safety</span>
+                      <span>Environmental Health &amp; Safety</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
@@ -95,7 +78,7 @@ END:VCARD`;
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Military & Government Contracting</span>
+                      <span>Military &amp; Government Contracting</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
