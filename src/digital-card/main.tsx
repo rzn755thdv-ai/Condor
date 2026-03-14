@@ -1,9 +1,18 @@
-import { createRoot } from 'react-dom/client';
-import DigitalCard from './DigitalCard';
-import '../styles/index.css';
+import React, { useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import SlideReveal from "../app/components/slide-reveal";
+import "../styles/index.css";
 
-const rootElement = document.getElementById('root');
+function DigitalCardApp() {
+  useEffect(() => {
+    document.title = "CCG0907";
+  }, []);
+
+  return <SlideReveal />;
+}
+
+const rootElement = document.getElementById("root");
 
 if (rootElement) {
-  createRoot(rootElement).render(<DigitalCard />);
+  createRoot(rootElement).render(<DigitalCardApp />);
 }
