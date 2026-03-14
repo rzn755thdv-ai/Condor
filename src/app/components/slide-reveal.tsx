@@ -31,16 +31,17 @@ export default function SlideReveal() {
     <div className="w-screen h-screen overflow-hidden bg-black flex items-center justify-center">
       <div className="relative w-full h-full max-w-[390px] max-h-[844px] bg-black flex flex-col">
         <div className="flex-1 relative">
-          <div className="absolute inset-0 flex">
-            <div className="w-1/3 relative bg-gradient-to-br from-[#111111] to-black flex items-start justify-center pt-8">
+          {/* Side 1 */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#111111] to-black">
+            <div className="h-1/3 flex items-center justify-center pt-6">
               <img
                 src={portrait}
                 alt="Portrait"
-                className="w-auto h-auto max-w-[90%] max-h-[200px] object-contain"
+                className="max-h-full max-w-[90%] w-auto object-contain"
               />
             </div>
 
-            <div className="w-2/3 bg-gradient-to-br from-[#111111] to-black flex items-center justify-center p-6 overflow-y-auto">
+            <div className="h-2/3 flex items-center justify-center px-6 pb-6 overflow-y-auto">
               <div className="text-center space-y-4">
                 <h2 className="text-lg font-semibold text-white leading-tight">
                   John Patrick Diaz
@@ -52,18 +53,18 @@ export default function SlideReveal() {
                   CONSULTING SERVICES
                 </p>
 
-                <div className="pt-4 space-y-3">
+                <div className="pt-2 space-y-3">
                   <p className="text-xs text-gray-400">
                     We provide a wide range of consultative services such as:
                   </p>
-                  <ul className="text-xs text-gray-300 space-y-1.5 text-left max-w-[240px] mx-auto">
+                  <ul className="text-xs text-gray-300 space-y-1.5 text-left max-w-[260px] mx-auto">
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Program &amp; Product Management</span>
+                      <span>Program & Product Management</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Environmental Health &amp; Safety</span>
+                      <span>Environmental Health & Safety</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
@@ -71,7 +72,7 @@ export default function SlideReveal() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
-                      <span>Military &amp; Government Contracting</span>
+                      <span>Military & Government Contracting</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#CD212A] mt-0.5">•</span>
@@ -91,8 +92,9 @@ export default function SlideReveal() {
             </div>
           </div>
 
+          {/* Side 2 */}
           <div
-            className="absolute inset-0 transition-all duration-100 px-6 py-10 bg-gradient-to-br from-[#111111] to-black flex flex-col items-center justify-between text-center"
+            className="absolute inset-0 transition-all duration-100 px-6 py-10 bg-gradient-to-br from-[#111111] to-black flex flex-col items-center justify-start text-center gap-4"
             style={{
               clipPath: `inset(0 ${100 - revealPosition[0]}% 0 0)`,
             }}
@@ -100,7 +102,7 @@ export default function SlideReveal() {
             <img
               src={logo}
               alt="Condor Consulting Group Logo"
-              className="w-full h-auto max-w-[375px] object-contain"
+              className="w-full h-auto max-w-[360px] object-contain"
             />
             <div className="space-y-2 text-gray-200 max-w-[340px]">
               <p className="text-sm font-semibold">
