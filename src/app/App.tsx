@@ -1,10 +1,21 @@
-import { useEffect } from "react";
-import SlideReveal from "./components/slide-reveal";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Capabilities from "./components/Capabilities";
+import Sectors from "./components/Sectors";
+import Engagement from "./components/Engagement";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
-  useEffect(() => {
-    document.title = "CCG0907";
-  }, []);
-
-  return <SlideReveal />;
+  return (
+    <>
+      <Hero />
+      <About />
+      <Capabilities />
+      <Sectors />
+      <Engagement />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
