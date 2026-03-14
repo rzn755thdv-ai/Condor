@@ -1,7 +1,7 @@
 
-  # Modern Consulting Website Design
+  # Image Reveal Slider Page
 
-  This is a code bundle for Modern Consulting Website Design. The original project is available at https://www.figma.com/design/uOvyAcjSCQFLzYg84Ir4dq/Modern-Consulting-Website-Design.
+  This is a code bundle for Image Reveal Slider Page. The original project is available at https://www.figma.com/design/aWs1gmmzuByIV0mdG8phQ0/Image-Reveal-Slider-Page.
 
   ## Running the code
 

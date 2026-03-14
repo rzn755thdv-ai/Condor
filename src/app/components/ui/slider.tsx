@@ -39,13 +39,16 @@ function Slider({
       <SliderPrimitive.Track
         data-slot="slider-track"
         className={cn(
-          "bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5",
+          "relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5",
         )}
+        style={{
+          background: 'linear-gradient(to right, #000000, #CD212A)'
+        }}
       >
         <SliderPrimitive.Range
           data-slot="slider-range"
           className={cn(
-            "bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full",
+            "absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full opacity-0",
           )}
         />
       </SliderPrimitive.Track>
@@ -53,7 +56,11 @@ function Slider({
         <SliderPrimitive.Thumb
           data-slot="slider-thumb"
           key={index}
-          className="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+          className="block size-6 shrink-0 rounded-full border-4 border-white shadow-lg transition-all disabled:pointer-events-none disabled:opacity-50 animate-pulse"
+          style={{
+            backgroundColor: '#CD212A',
+            boxShadow: '0 0 0 4px rgba(205, 33, 42, 0.3), 0 0 20px rgba(205, 33, 42, 0.5)'
+          }}
         />
       ))}
     </SliderPrimitive.Root>
