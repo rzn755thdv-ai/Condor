@@ -1,4 +1,4 @@
-import condorLogo from '../../../logo.png';
+import condorLogo from '../../../Logo.png';
 import heroBg from '../../../Hero.png';
 export function Hero() {
   return (
@@ -33,7 +33,7 @@ export function Hero() {
 
           {/* Main Headline */}
           <div className="space-y-6">
-            <p className="text-2xl md:text-3xl lg:text-4xl text-foreground/90 tracking-wide italic">
+            <p className="text-xl md:text-3xl lg:text-4xl text-foreground/90 tracking-tight italic">
               Adaptive Solutions for the Modern World
             </p>
             <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
@@ -46,7 +46,7 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <button className="px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-wide min-w-[200px] border-2 border-primary">
+            <button className="px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-tight min-w-[200px] border-2 border-primary">
               Book Consultation
             </button>
           </div>
