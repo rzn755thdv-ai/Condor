@@ -71,16 +71,18 @@ export default function SlideReveal() {
                 />
               </div>
 
-              <div className="h-1/2 flex items-center justify-center px-6 pb-6 overflow-y-auto">
-                <div className="text-center space-y-4 max-w-[340px]">
-                  <h2 className={headingClass}>John Patrick Diaz</h2>
-                  <p className={bodyClass}>Managing Director</p>
-                  <p className={bodyClass}>CONSULTING SERVICES</p>
-
-                  <div className="pt-2 space-y-3">
+              <div className="h-1/2 flex items-start justify-center px-6 pb-6 pt-4 overflow-y-auto">
+                <div className="text-center max-w-[340px]">
+                  <div className="space-y-1">
+                    <h2 className={headingClass}>John Patrick Diaz</h2>
+                    <p className={bodyClass}>Managing Director</p>
+                    <p className={bodyClass}>CONSULTING SERVICES</p>
                     <p className={bodyClass}>
-                      We provide a wide range of consultative services such as:
+                      We provide a wide range of consultative services
                     </p>
+                  </div>
+
+                  <div className="pt-3">
                     <ul className={`${bodyClass} space-y-2 text-left max-w-[260px] mx-auto`}>
                       <li className="flex items-start gap-2">
                         <span className="text-[#CD212A] mt-0.5">•</span>
