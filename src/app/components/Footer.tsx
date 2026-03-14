@@ -1,4 +1,4 @@
-import condorLogo from 'figma:asset/b569dd567ea2795ee4dab8dbde7028b9e421190e.png';
+import condorLogo from '../../../Logo.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
