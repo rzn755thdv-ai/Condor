@@ -46,13 +46,13 @@ export default function SlideReveal() {
             <div className="w-2/3 bg-gradient-to-br from-[#111111] to-black flex items-center justify-center p-6 overflow-y-auto">
               <div className="text-center space-y-4">
                 <h2 className="text-lg font-semibold text-white leading-tight">
-                  Adaptive Solutions for the Modern World
+                  John Patrick Diaz
                 </h2>
                 <p className="text-xs font-medium text-gray-300">
-                  Strategy. Compliance. Operations. Contract Delivery.
+                  Managing Director
                 </p>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Delivering solutions for institutions operating in complex environments.
+                  CONSULTING SERVICES
                 </p>
 
                 {/* Consulting Services Section */}
