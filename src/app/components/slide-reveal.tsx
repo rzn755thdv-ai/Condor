@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Slider } from "./ui/slider";
 import { Button } from "./ui/button";
 
-// Import uploaded images
-const portrait = "figma:asset/9c44bf18f972dc86ed51a2e526d44a463cefcddc.png";
-const logo = "figma:asset/b569dd567ea2795ee4dab8dbde7028b9e421190e.png";
+import portrait from "../../../portrait.PNG";
+import logo from "../../../Logo.png";
 
 export default function SlideReveal() {
   const [revealPosition, setRevealPosition] = useState([0]);
@@ -12,10 +11,10 @@ export default function SlideReveal() {
   // Contact information for vCard
   const contactInfo = {
     name: "John Doe",
-    organization: "Example Corp",
+    organization: "Condor Consulting Group",
     phone: "+1-234-567-8900",
     email: "john.doe@example.com",
-    website: "https://example.com",
+    website: "https://condorconsultinggroup.co",
   };
 
   const saveContact = () => {
@@ -72,7 +71,7 @@ END:VCARD`;
                 <p className="text-xs text-gray-400 leading-relaxed">
                   Delivering solutions for institutions operating in complex environments.
                 </p>
-                
+
                 {/* Consulting Services Section */}
                 <div className="pt-4 space-y-3">
                   <h3 className="text-sm font-semibold text-white uppercase tracking-wide">
@@ -158,7 +157,7 @@ END:VCARD`;
               <Button
                 onClick={saveContact}
                 className="flex-1 text-white hover:opacity-90"
-                style={{ backgroundColor: '#CD212A' }}
+                style={{ backgroundColor: "#CD212A" }}
                 size="lg"
               >
                 Save Contact
@@ -166,7 +165,7 @@ END:VCARD`;
               <Button
                 onClick={goToWebsite}
                 className="flex-1 text-white hover:opacity-90"
-                style={{ backgroundColor: '#CD212A' }}
+                style={{ backgroundColor: "#CD212A" }}
                 size="lg"
               >
                 Visit Website
