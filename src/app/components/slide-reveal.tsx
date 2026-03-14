@@ -3,7 +3,7 @@ import { Slider } from "./ui/slider";
 import { Button } from "./ui/button";
 
 import portrait from "../../../portrait.PNG";
-import logo from "../../../Logo.png";
+import logo from "../../../logo.png";
 import vcard from "../../../John_D.vcf";
 
 export default function SlideReveal() {
