@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import SlideReveal from "../app/components/slide-reveal";
+import DigitalCard from "./DigitalCard";
 import "../styles/index.css";
 
 function DigitalCardApp() {
   useEffect(() => {
-    document.title = "CCG0907";
+    document.title = "CCG - Adaptive Solutions for the Modern World";
   }, []);
 
-  return <SlideReveal />;
+  return <DigitalCard />;
 }
 
 const rootElement = document.getElementById("root");
