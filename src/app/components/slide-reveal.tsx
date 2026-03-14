@@ -27,8 +27,7 @@ export default function SlideReveal() {
     window.location.href = contactInfo.website;
   };
 
-  const cardClass =
-    "w-full h-full rounded-3xl border border-white/8 bg-white/10 shadow-inner";
+  const cardClass = "w-full h-full rounded-3xl border border-white/8 bg-white/10 shadow-inner";
   const headingClass = "text-base font-semibold text-gray-100 leading-tight";
   const bodyClass = "text-xs text-gray-200";
 
