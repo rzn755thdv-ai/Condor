@@ -45,7 +45,7 @@ export default function SlideReveal() {
               />
 
               <div className="text-center space-y-2 max-w-[340px]">
-                <p className={headingClass} style={{ whiteSpace: "nowrap", fontSize: "0.9rem" }}>> Adaptive Solutions for the Modern World
+                <p className={headingClass} style={{ whiteSpace: "nowrap", fontSize: "0.9rem" }}> Adaptive Solutions for the Modern World
 </p>
                 <p className={bodyClass}>
                   Strategy. Compliance. Operations. Contract Delivery.
