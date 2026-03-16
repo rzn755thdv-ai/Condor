@@ -3,7 +3,7 @@ import { Slider } from "./ui/slider";
 import { Button } from "./ui/button";
 
 import portrait from "../../../portrait.PNG";
-import logo from "../../../logo.png";
+import logo from "../../../Logo.png";
 import vcard from "../../../John_D.vcf";
 
 export default function SlideReveal() {
@@ -45,7 +45,8 @@ export default function SlideReveal() {
               />
 
               <div className="text-center space-y-2 max-w-[340px]">
-                <p className={headingClass}>Adaptive Solutions for the Modern World</p>
+                <p className={headingClass} style={{ whiteSpace: "nowrap", fontSize: "0.9rem" }}>> Adaptive Solutions for the Modern World
+</p>
                 <p className={bodyClass}>
                   Strategy. Compliance. Operations. Contract Delivery.
                 </p>
@@ -75,9 +76,9 @@ export default function SlideReveal() {
                   <div className="space-y-1">
                     <h2 className={headingClass}>John Patrick Diaz</h2>
                     <p className={bodyClass}>Managing Director</p>
-                    <p className={bodyClass}>CONSULTING SERVICES</p>
+                    <p className={bodyClass}></p>
                     <p className={bodyClass}>
-                      We provide a wide range of consultative services
+                     The Condor Group provides a wide range of consultative services.
                     </p>
                   </div>
 
