@@ -78,7 +78,7 @@ export default function SlideReveal() {
                     <p className={bodyClass}>Managing Director</p>
                     <p className={bodyClass}></p>
                     <p className={bodyClass}>
-                     The Condor Group provides a wide range of consultative services.
+                     Our range consultative services:
                     </p>
                   </div>
 
