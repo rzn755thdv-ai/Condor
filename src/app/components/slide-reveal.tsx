@@ -78,7 +78,7 @@ export default function SlideReveal() {
                     <p className={bodyClass}>Managing Director</p>
                     <p className={bodyClass}></p>
                     <p className={bodyClass}>
-                     Our range consultative services:
+                     Our range of consultative services:
                     </p>
                   </div>
 
