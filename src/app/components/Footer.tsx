@@ -47,8 +47,7 @@ export function Footer() {
                 <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
                   Sectors
                 </a>
-                <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
-                  Connect
+                <a href="/partners" className="block text-muted-foreground hover:text-primary transition-colors">Partner Network
                 </a>
               </div>
             </div>
