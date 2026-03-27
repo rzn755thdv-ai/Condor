@@ -36,7 +36,7 @@ export function Hero() {
             <p className="text-xl md:text-3xl lg:text-4xl text-foreground/90 tracking-tight italic">
               Adaptive Solutions for the Modern World
             </p>
-            <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-[clamp(12px,3.5vw,20px)] md:text-xl whitespace-nowrap text-foreground max-w-3xl mx-auto leading-relaxed">
               Strategy. Compliance. Operations. Contract Delivery.
             </p>
             <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
