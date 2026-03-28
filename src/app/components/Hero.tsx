@@ -52,7 +52,7 @@ export function Hero() {
             </button>
             <a
               href="/partners"
-              className="px-8 py-4 border-2 border-primary text-primary hover:bg-primary/10 transition-colors text-base tracking-tight min-w-[200px]"
+              className="px-8 py-4 border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-tight min-w-[200px]"
             >
               Join our trusted partners
             </a>
