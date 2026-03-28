@@ -47,12 +47,12 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <button className="px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-tight min-w-[200px] border-2 border-primary">
+            <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-semibold leading-none tracking-tight min-w-[200px] border-2 border-primary">
               Book Consultation
             </button>
             <a
               href="/partners"
-              className="px-8 py-4 border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-tight min-w-[200px]"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base font-semibold leading-none tracking-tight min-w-[200px]"
             >
               Join our trusted partners
             </a>
