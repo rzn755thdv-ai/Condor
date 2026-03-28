@@ -1,13 +1,14 @@
 import condorLogo from '../../../Logo.png';
 import heroBg from '../../../Hero.png';
+
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
-          alt="" 
+        <img
+          src={heroBg}
+          alt=""
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/40 to-background/80" />
@@ -24,9 +25,9 @@ export function Hero() {
         <div className="space-y-12">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <img 
-              src={condorLogo} 
-              alt="Condor Consulting Group" 
+            <img
+              src={condorLogo}
+              alt="Condor Consulting Group"
               className="w-48 md:w-64 h-auto"
             />
           </div>
@@ -49,6 +50,12 @@ export function Hero() {
             <button className="px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-base tracking-tight min-w-[200px] border-2 border-primary">
               Book Consultation
             </button>
+            <a
+              href="/partners"
+              className="px-8 py-4 border-2 border-primary text-primary hover:bg-primary/10 transition-colors text-base tracking-tight min-w-[200px]"
+            >
+              Join our trusted partners
+            </a>
           </div>
         </div>
       </div>
