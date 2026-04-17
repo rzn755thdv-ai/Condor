@@ -20,15 +20,21 @@ export default {
       });
     };
 
-    // Condor digital business card short link
-    if (normalized === "/ccg0907") {
+    // Preferred QR and shareable link
+    if (normalized === "/johnny") {
       const res = await fetch(new URL("/digital-card.html", url));
       return addNoIndexHeader(res);
     }
 
-    // Allow /digital-card shorthand
-    if (normalized === "/digital-card") {
+    // Backwards compatible short links
+    if (normalized === "/ccg0907" || normalized === "/digital-card") {
       const res = await fetch(new URL("/digital-card.html", url));
+      return addNoIndexHeader(res);
+    }
+
+    // Short link for PDF
+    if (normalized === "/ss") {
+      const res = await fetch(new URL("/files/simplesabotage.pdf", url));
       return addNoIndexHeader(res);
     }
 
