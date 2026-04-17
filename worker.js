@@ -2,13 +2,19 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
 
-    // Normalize path (lowercase and remove trailing slashes)
-    const normalized = (url.pathname.replace(/\/+$/, "") || "/").toLowerCase();
+    let normalized = url.pathname;
+    while (normalized.endsWith("/") && normalized !== "/") {
+      normalized = normalized.slice(0, -1);
+    }
+    normalized = (normalized || "/").toLowerCase();
 
     // Paths that should not be indexed by search engines
     const shouldNoIndex =
       normalized === "/digital-card.html" ||
-      normalized === "/files/simplesabotage.pdf";
+      normalized === "/files/simplesabotage.pdf" ||
+      normalized === "/johnny" ||
+      normalized === "/ccg-q7v2p" ||
+      normalized === "/ss";
 
     const addNoIndexHeader = (response) => {
       const headers = new Headers(response.headers);
@@ -21,13 +27,17 @@ export default {
     };
 
     // Preferred QR and shareable link
-    if (normalized === "/johnny") {
+    if (normalized === "/ccg-q7v2p") {
       const res = await fetch(new URL("/digital-card.html", url));
       return addNoIndexHeader(res);
     }
 
     // Backwards compatible short links
-    if (normalized === "/ccg0907" || normalized === "/digital-card") {
+    if (
+      normalized === "/johnny" ||
+      normalized === "/ccg0907" ||
+      normalized === "/digital-card"
+    ) {
       const res = await fetch(new URL("/digital-card.html", url));
       return addNoIndexHeader(res);
     }
