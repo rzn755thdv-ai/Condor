@@ -2,7 +2,7 @@ import { Mail } from 'lucide-react';
 
 export function Contact() {
   const handleEmail = () => {
-    window.location.href = 'mailto:John@condorconsulting.org';
+    window.location.href = 'mailto:john@condorconsulting.org';
   };
 
   return (
@@ -73,7 +73,7 @@ export function Contact() {
             >
               <Mail className="w-5 h-5 text-primary" strokeWidth={1.5} />
               <span className="text-base font-medium">Email</span>
-              <span className="ml-auto text-sm text-muted-foreground">John@condorconsulting.org</span>
+              <span className="ml-auto text-sm text-muted-foreground">john@condorconsulting.org</span>
             </button>
           </div>
         </div>
